@@ -1,0 +1,120 @@
+<!-- OM Chanting -->
+
+<div class="par-container-small-fluid">
+  <div class="container">
+    <form class="form">
+      <label for="inputPassword" class="col-sm-2 col-form-label">City / State</label>
+      <div class="col-sm-3">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Filter...">
+      </div>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>City / State</th>
+          <th>Date / Time</th>
+          <th colspan="2">Address</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Florianópolis / SC</td>
+          <td>Monday, 18:30</td>
+          <td>UFSC (Universidade Federal de Santa Catarina), CCB (Centro de Ciências Biológicas) - <a href="">View Map</a></td>
+          <td><img src="http://placehold.it/72x72" alt="Thumbnail"></td>
+          <td>Tulsi Dasi<br/><a href="#">tulsidasi@bm.org</a><br/>(48) 8831 0834<br/><a href="#">Facebook</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- Sadhana Teachers -->
+
+<div class="par-container-small-fluid">
+  <div class="container">
+    <form class="form">
+      <label for="inputPassword" class="col-sm-2 col-form-label">City / State</label>
+      <div class="col-sm-3">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Filter...">
+      </div>
+      <label for="exampleSelect1">Practice</label>
+      <div class="col-sm-3">
+        <select class="form-control" id="exampleSelect1">
+          <option>Atma Kriya Yoga</option>
+        </select>
+      </div>
+    </form>
+    <table class="table">
+    	<thead>
+    		<tr>
+    			<th colspan="2">Teacher</th>
+    			<th>City / State</th>
+    			<th>Practices</th>
+    			<th>Contact</th>
+    			<th>Languages</th>
+    			<th>Travels?</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td><img alt="Thumbnail" src="http://placehold.it/72x72" /></td>
+    			<td>Tulsi Dasi<br />
+    			<a href="#">Profile</a></td>
+    			<td>Florianópolis / SC</td>
+    			<td><img alt="" height="24" src="/themes/custom/sadhana_theme/images/pm-symbol.svg" width="24" /> <img alt="" height="24" src="/themes/custom/sadhana_theme/images/bsn-symbol.svg" width="24" /> <img alt="" height="24" src="/themes/custom/sadhana_theme/images/omc-symbol.svg" width="24" /> <img alt="" height="24" src="/themes/custom/sadhana_theme/images/sm-symbol.svg" width="24" /> <img alt="" height="24" src="/themes/custom/sadhana_theme/images/aky-symbol.svg" width="24" /></td>
+    			<td><a href="#">tulsidasi@bm.org</a><br />
+    			(48) 8831 0834<br />
+    			<a href="#">Facebook</a></td>
+    			<td>Portuguese, English</td>
+    			<td>Travels, do Skype</td>
+    		</tr>
+    	</tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- WP Sadhana Teachers -->
+
+[wpv-layout-start]
+	[wpv-items-found]
+	<!-- wpv-loop-start -->
+	<table class="table">
+		<thead>
+			<tr>
+				<th></th>
+				<th>[wpv-heading name="types-field-full-name"]Teacher[/wpv-heading]</th>
+				<th>[wpv-heading name="types-field-city-state"]City / State[/wpv-heading]</th>
+				<th>[wpv-heading name="types-field-practices"]Practices[/wpv-heading]</th>
+				<th>[wpv-heading name="types-field-email"]Contact[/wpv-heading]</th>
+				<th>[wpv-heading name="types-field-languages"]Languages[/wpv-heading]</th>
+				<th>[wpv-heading name="types-field-travel"]Travels?[/wpv-heading]</th>
+			</tr>
+		</thead>
+		<tbody class="wpv-loop js-wpv-loop">
+		<wpv-loop>
+			<tr>
+				<td>[types field='teacher-photo' alt='Teacher Profile Photo' width='72' height='72' align='none' resize='proportional'][/types]</td>
+				<td>[types field='full-name'][/types]</td>
+				<td>[types field='city-state'][/types]</td>
+				<td>[types field='practices' separator=', '][/types]</td>
+				<td>
+          [types field='email'][/types]<br/>
+          [types field='phone'][/types]<br/>
+          <a href="[types field='facebook-profile' output='raw'][/types]" target="_blank">Facebook</a>
+        </td>
+				<td>[types field='languages'][/types]</td>
+				<td>[types field='travel' separator=', '][/types]</td>
+			</tr>
+		</wpv-loop>
+		</tbody>
+	</table>
+	<!-- wpv-loop-end -->
+	[/wpv-items-found]
+	[wpv-no-items-found]
+		<strong>[wpml-string context="wpv-views"]No items found[/wpml-string]</strong>
+	[/wpv-no-items-found]
+[wpv-layout-end]

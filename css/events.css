@@ -1,0 +1,125 @@
+#container {
+  padding-top: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.breadcrumb-navigation,
+.events-maker-ical,
+.comments-link,
+.event-category {
+  display: none;
+}
+
+.entry-thumbnail:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+.entry-title {
+  margin-bottom: 1.111em;
+}
+
+.attachment-post-thumbnail {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.entry-header {
+  clear: none;
+}
+
+.entry-header .entry-meta {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 45px;
+}
+
+.entry-header a {
+  color: #333;
+}
+
+.entry-header a:hover {
+  color: #333;
+  cursor: default;
+  text-decoration: none;
+}
+
+.entry-header .entry-date,
+.top-info > div {
+  position: relative;
+  font-family: 'Avenir Next W06 Regular';
+  line-height: 1.4;
+  width: 100%;
+}
+
+.entry-header .dtstart:before,
+.fa:before {
+  position: absolute;
+  top: 2px;
+  width: 20px;
+  text-align: center;
+  left: -30px;
+  color: #757575;
+  font: normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.entry-header .dtstart:before {
+  content: "\f073";
+}
+
+.single-event .entry-content {
+  clear: none;
+}
+
+.top-info {
+  font-size: 18px;
+  padding-left: 45px;
+}
+
+.top-info > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.top-info  p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.top-info .info-secondary {
+  color: #757575;
+  font-size: 16px;
+}
+
+.middle-info {
+  clear: both;
+  margin-top: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 1.6em 0 1em;
+}
+
+@media (min-width: 901px) {
+  .attachment-post-thumbnail {
+    max-width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .entry-header .entry-meta,
+  .top-info {
+    margin-left: calc(50% + 20px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+    padding: 30px 0 0 0;
+  }
+}
