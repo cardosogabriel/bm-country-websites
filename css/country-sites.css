@@ -1,8 +1,3 @@
-/* Map CSS
---------------------------------------------- */
-
-
-
 /* Global CSS
 --------------------------------------------- */
 
@@ -20,12 +15,13 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-padding: 6px 12px;
-border-radius: 2px;
-font-size: 16px;
-text-transform: uppercase;
-border: 1px solid transparent;
-border-color: #0b79d1;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-color: #0b79d1;
 }
 
 button:hover,
@@ -40,7 +36,6 @@ input:focus[type="submit"],
 .button:focus {
     background-color: #0a6bb8;
     border-color: #085797;
-
 }
 
 #wpadminbar ul#wp-admin-bar-root-default> li.toolset-edit-link> a {
@@ -76,8 +71,7 @@ max-width: 400px;
 }
 
 li {
-	font-size: 17px;
-    font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 blockquote {
@@ -92,8 +86,7 @@ blockquote {
 }
 
 blockquote p {
-    font-size: 20px;
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 blockquote::before {
@@ -109,8 +102,10 @@ margin-bottom: 40px important;
 
 h1,
 .entry-title {
-font-weight: 400;
-letter-spacing: -.03em;
+  margin-bottom: 1.111em;
+  font-weight: 400;
+  letter-spacing: -.03em;
+  font-size: 3.2rem;
 }
 
 h5 {
@@ -138,50 +133,75 @@ a[title*="Edit view"] { display: none; }
 --------------------------------------------- */
 
 #logo {
-    background: url(images/web-logo.png) top center no-repeat;
-    width: 290px;
-    height: 70px;
-    background-size: contain;
-    margin-left: -30px;
+  background: url(images/web-logo.png) top center no-repeat;
+  width: 192px;
+  height: 54px;
+  background-size: contain;
+  margin-left: -3px;
 }
 
 .nav-primary {
-font-family:'Avenir Next W06 Regular';
-   background: white;
-   border-top: 1px solid #f0f0f0;
-   border-bottom: 1px solid #f0f0f0;
-   text-transform: uppercase;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  text-transform: uppercase;
 }
 
 .nav-primary a {
-    color: #808084;
-    font-size: 14px;
-    font-size: 1.4rem;
+  color: rgba(0,0,0,0.54);
+  font-size: 1.4rem;
 }
 
-.genesis-nav-menu a:hover, .genesis-nav-menu a:focus, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover, .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
- color: #333;
+.genesis-nav-menu a {
+  padding: 17px 14px;
 }
 
-.genesis-nav-menu a:hover, .genesis-nav-menu a:focus, .current-menu-item > a, {
-text-decoration: none;
-
+.genesis-nav-menu > li:first-child a {
+  padding-left: 0;
 }
 
-/* Primary Nav Sub-Page Link */
-.menu-primary li li a, .menu-primary li li a:link, .menu-primary li li a:visited {
-background: white;
-text-transform: none;
-border-left: 1px solid #f0f0f0;
-border-right: 1px solid #f0f0f0;
-border-bottom: 1px solid #f0f0f0;
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus {
+  color: rgba(0,0,0,0.8);
 }
 
-/* Primary Nav Sub-Page Link Hover */
-.menu-primary li li a:active, .menu-primary li li a:hover {
-color: #808084;
-background: #f5f5f5;
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.current-menu-item > a, {
+  text-decoration: none;
 }
+
+/* Primary Nav Dropdown */
+
+.menu-primary .sub-menu {
+  margin-top: 1px;
+  padding: 8px 0;
+  width: 24rem;
+  border: 1px solid rgba(0,0,0,0.15);
+  background-color: white;
+}
+
+.menu-primary .sub-menu li {
+  width: 100%;
+}
+
+.menu-primary li li a,
+.menu-primary li li a:link,
+.menu-primary li li a:visited {
+  padding: 8px 24px;
+  text-transform: none;
+  border: none;
+  width: auto;
+}
+
+.menu-primary li li a:active,
+.menu-primary li li a:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/**/
 
 .site-header .widget-area {
 margin-top: 30px;
@@ -189,17 +209,10 @@ margin-right: 0px;
 max-width: 600px;
 }
 
-.genesis-nav-menu {
-margin-left: -20px;
-}
-
 #menu-item-1940 a {
 color: #808084;
 }
 
-.genesis-nav-menu a {
- padding: 16px 16px;
-}
 
 .menu-item img._before, .rtl .menu-item img._after {
     margin-right: .5em;
@@ -463,68 +476,88 @@ margin-top: 90px;
 /* Media Queries
 --------------------------------------------- */
 
-
-@media only screen and (max-width: 1340px) {
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-}
-
-
 @media only screen and (max-width: 1023px) {
-.menu-toggle {
-    color: #333;
-    border-top: 0px;
-    background-color: white;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
-}
 
-.js nav button:hover, .js .menu-toggle:hover, .js .nav-primary, .js nav button:focus, .js .menu-toggle:focus {
-     color: #333;
-    border-top: 0px;
+  .js .menu-toggle,
+  .js .menu-toggle.activated,
+  .js .menu-toggle:hover,
+  .js .menu-toggle:focus {
+    color: rgba(0,0,0,0.54);
     background-color: white;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
-}
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0;
+    line-height: 42px;
+    outline: none;
+  }
+
+  .menu-toggle:before,
+  .menu-toggle.activated:before {
+    margin-right: 8px;
+    line-height: 40px;
+    font-size: 24px;
+  }
 
 .fa-caret-down {
 	display: none !important;
 }
 
-.js nav button:hover, .js .menu-toggle:hover, .js .nav-primary, .js nav button:focus, .js .menu-toggle:focus {
-    color: #333;
-    border-top: 0px;
-    background-color: white;
-    border-top: 0px solid #f0f0f0;
-    border-bottom: 0px solid #f0f0f0;
-}
+  .js .genesis-nav-menu {
+    background: #1a3342;
+    padding-left: 24px;
+  }
 
-.js .genesis-nav-menu .sub-menu {
-    background: #30424d;
-}
+  .js .nav-primary .genesis-nav-menu .menu-item {
+    margin: 0;
+  }
 
-.nav-primary a {
+  .nav-primary {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .nav-primary a {
+    color: rgba(255,255,255,0.8);
+    background-color: transparent;
+  }
+
+  .genesis-nav-menu a:hover,
+  .genesis-nav-menu a:focus,
+  .genesis-nav-menu .current-menu-item > a,
+  .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+  .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
     color: white;
-}
+  }
 
-.genesis-nav-menu a:hover, .genesis-nav-menu a:focus, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover, .genesis-nav-menu .sub-menu .current-menu-item > a:focus {
-  color: white;
-}
+  .genesis-nav-menu .sub-menu a:hover {
+    color: white;
+  }
 
-.genesis-nav-menu .sub-menu a {
-color: #9e9e9e;
-}
+  .js .nav-primary .genesis-nav-menu .menu-item,
+  .js .site-header .genesis-nav-menu .menu-item {
+    border: 1px solid rgba(255,255,255,.1);
+    border-left: none;
+    border-bottom: none;
+  }
 
-.genesis-nav-menu .sub-menu a:hover {
-color: white;
-}
+  .js .nav-primary .genesis-nav-menu .menu-item a,
+  .js .site-header .genesis-nav-menu .menu-item a {
+    padding: 0;
+    line-height: 42px;
+  }
 
-.js .nav-primary .genesis-nav-menu .menu-item a, .js .site-header .genesis-nav-menu .menu-item a {
-    padding-left: 20px;
-}
+  .js .genesis-nav-menu .sub-menu,
+  .js .genesis-nav-menu .sub-menu li a {
+    background-color: transparent;
+  }
+
+  .js .genesis-nav-menu .sub-menu {
+    padding: 0;
+  }
+
+  .js .genesis-nav-menu .sub-menu li {
+    padding-left: 16px;
+  }
 
 .site-header .wrap {
     background-color: white;
@@ -536,9 +569,9 @@ color: white;
     background-color: #717171;
 }
 
-li a, .menu-primary li li a:link, .menu-primary li li a:visited {
-    background: #30424d;
-}
+  li a, .menu-primary li li a:link, .menu-primary li li a:visited {
+      background: #30424d;
+  }
 
 .genesis-nav-menu {
 margin-left: 0px;
@@ -622,13 +655,21 @@ margin-bottom: 25px;
 
 button.sub-menu-toggle.dashicons-before.dashicons-arrow-down {
 	background: transparent;
-	color: white;
+	color: rgba(255,255,255,.8);
 }
 
+button.sub-menu-toggle.dashicons-before.dashicons-arrow-down:hover,
 button.sub-menu-toggle.dashicons-before.dashicons-arrow-down:focus {
 	outline: none;
+	color: white;
 }
 
 button.sub-menu-toggle.dashicons-before.dashicons-arrow-down.activated {
 	outline: #ccc solid 0px;
+}
+
+@media (min-width: 1024px) {
+  .genesis-nav-menu {
+    width: calc(100% + 14px);
+  }
 }
