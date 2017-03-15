@@ -1,9 +1,12 @@
 /* Global CSS
 --------------------------------------------- */
 
-body > div {
-  font-size: 1.6rem;
+body,
+body > div { /* Hack because some text is out of <p> tag */
+  font-size: 1.8rem;
   line-height: 1.5;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 a {
@@ -39,8 +42,9 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-    background-color: #0a6bb8;
-    border-color: #085797;
+  background-color: #0a6bb8;
+  border-color: #085797;
+  text-decoration: none;
 }
 
 #wpadminbar ul#wp-admin-bar-root-default> li.toolset-edit-link> a {
@@ -66,32 +70,36 @@ display: none;
     float: none;
 }
 
-.sadhana-logo {
-float: none;
-}
-
-.sadhana {
-background-size: contain;
-max-width: 400px;
-}
-
 li {
   font-size: 1.8rem;
 }
 
 blockquote {
-    border-left: 2px solid;
-    border-color: #d12a2f;
-    font-style: normal;
-    margin-left: -32px;
-    padding-left: 30px;
-    color: #002F61;
-    text-transform: uppercase;
-    margin-bottom: 0px;
+  border-width: 0 2px;
+  border-style: solid;
+  border-color: #97694b;
+  text-align: center;
+  padding: 0 3.2rem;
+  font-size: 2rem;
+  font-style: normal;
+  color: #152C51;
+  text-transform: uppercase;
+  margin: 4rem 0 0;
 }
 
 blockquote p {
   font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+blockquote h5,
+blockquote p + p,
+h5 {
+  font-family:'Avenir Next W06 Regular';
+  color: #97694b;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
 }
 
 blockquote::before {
@@ -105,6 +113,10 @@ margin-bottom: 40px important;
 /* Font CSS
 --------------------------------------------- */
 
+p {
+  font-size: 1.8rem;
+}
+
 h1,
 .entry-title {
   margin-bottom: 1.111em;
@@ -113,14 +125,17 @@ h1,
   font-size: 3.2rem;
 }
 
-h5 {
-font-family:'Avenir Next W06 Regular';
-}
-
-
 h2, h3, h4 {
 font-family:'Avenir Next W06 Demi';
 color: #00A0BE;
+}
+
+.sadhana-tagline {
+  color: #836C49;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 /* Toolset CSS
@@ -300,7 +315,6 @@ display: block;
 }
 
 
-
 /* Footer CSS
 --------------------------------------------- */
 
@@ -476,6 +490,14 @@ margin-top: 90px;
 }
 }
 
+.sadhana-practice-brand {
+  max-width: 360px;
+  margin-bottom: 12px;
+}
+
+.sadhana-practice-brand img {
+  width: 100%;
+}
 
 
 /* Media Queries
