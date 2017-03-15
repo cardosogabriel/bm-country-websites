@@ -262,6 +262,10 @@ body > div { /* Hack because some text is out of <p> tag */
   -moz-osx-font-smoothing: auto;
 }
 
+.site-inner {
+  padding-top: 6rem;
+}
+
 a {
     color: #0d87e9;
 }
@@ -306,10 +310,7 @@ input:focus[type="submit"],
 }
 
 .entry {
-padding-top: 0px;
-padding-left: 0px;
-padding-right: 0px;
-margin-bottom: 40px;
+  padding: 0
 }
 
 .footer-widgets {
@@ -376,6 +377,11 @@ h1,
   font-weight: 400;
   letter-spacing: -.03em;
   font-size: 3.2rem;
+}
+
+h2,
+h3 {
+  margin: 1.6em 0 1em;
 }
 
 h2, h3, h4 {
@@ -512,6 +518,10 @@ color: #808084;
 
 #ez-home-bottom-container {
   margin-bottom: 0;
+}
+
+.ez-home-container-area {
+  margin: 0;
 }
 
 .ez-home-container-area .entry-content {
@@ -666,13 +676,42 @@ color: #333333;
     border-color: #bebebe;
 }
 
-/* Gravity Forms
+/* Forms
 --------------------------------------------- */
 
-.gform_wrapper {
-padding: 40px;
-    font-size: 16px;
-    font-size: 1.6rem;
+input,
+select {
+  padding: .8rem 1.2rem;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .2rem;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+input:focus,
+select:focus {
+  color: #464a4c;
+  background-color: #fff;
+  border-color: #5cb3fd;
+  outline: 0;
+}
+
+.gform_wrapper label.gfield_label {
+  font-size: 1.6rem!important;
+}
+
+body .gform_wrapper .top_label div.ginput_container {
+  margin-top: 0!important;
+}
+
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
+.gform_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+  color: #757575;
 }
 
 .noline {
@@ -681,6 +720,21 @@ padding: 40px;
     margin: 28px 0;
     clear: both;
 }
+
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+  padding: .8rem 1.2rem!important;
+  font-size: 1.6rem!important;
+  line-height: 1.4!important;
+}
+
+.gform_wrapper .gfield_required {
+  color: #f00!important;
+}
+
+.gform_wrapper .gform_footer {
+  margin-top: 0!important;
+}
+
 
 /* Slider CSS
 --------------------------------------------- */
@@ -714,6 +768,51 @@ margin-top: 90px;
   width: 100%;
 }
 
+/* Blog
+--------------------------------------------- */
+
+.blog-page .site-inner {
+  padding-top: 3rem;
+}
+
+.blog-page .container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blog-feed h2,
+.blog-feed h3 {
+  margin: 0;
+}
+
+.blog-feed h2 {
+  margin: .8rem 0;
+}
+
+.blog-feed p {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1201px) {
+  .container {
+      width: 1150px!important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+      width: 960px!important;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1023px) {
+  .container {
+      width: 800px!important;
+  }
+}
+
 
 /* Sadhana Teachers and OMC Circles Tables
 --------------------------------------------- */
@@ -722,33 +821,16 @@ margin-top: 90px;
   margin-top: 3.2rem;
   margin-bottom: 2.4rem;
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
-input,
-select {
+.wpv-filter-form input,
+.wpv-filter-form select {
   display: block;
   width: 100%;
-  padding: .8rem 1.2rem;
-  font-size: 1.6rem;
-  line-height: 1.25;
-  color: #464a4c;
-  background-color: #fff;
-  background-image: none;
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .2rem;
-  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
   margin-right: 1.6rem;
   margin-bottom: 1.6rem;
   margin-top: .4rem;
-}
-
-input:focus,
-select:focus {
-  color: #464a4c;
-  background-color: #fff;
-  border-color: #5cb3fd;
-  outline: 0;
 }
 
 select {
@@ -763,9 +845,10 @@ select {
   vertical-align: middle;
 }
 
-table {
+.table {
   line-height: 1.4;
   word-break: normal;
+  font-size: 1.6rem;
 }
 
 .table thead th {
@@ -788,8 +871,8 @@ table img {
     margin-bottom: .8rem;
   }
 
-  input,
-  select {
+  .wpv-filter-form input,
+  .wpv-filter-form select {
     display: inline-block;
     width: auto;
   }
@@ -810,7 +893,7 @@ table img {
 }
 
 
-/* Media Queries
+/* General Media Queries
 --------------------------------------------- */
 
 @media only screen and (max-width: 1023px) {
