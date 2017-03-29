@@ -338,7 +338,7 @@ blockquote {
   font-style: normal;
   color: #152C51;
   text-transform: uppercase;
-  margin: 4rem 0 0;
+  margin: 4rem 0;
 }
 
 blockquote p {
@@ -358,6 +358,16 @@ h5 {
 
 blockquote::before {
 display: none;
+}
+
+img.alignnone,
+.alignnone {
+  margin-bottom: 2.4rem;
+}
+
+p img.alignnone,
+p .alignnone {
+  margin-bottom: 0;
 }
 
 
@@ -392,6 +402,32 @@ color: #00A0BE;
   font-weight: 500;
   line-height: 1.1;
   text-transform: uppercase;
+  margin-top: 1.6rem;
+}
+
+.sadhana-tagline--pm {
+  color: #614876;
+  font-size: 2.8rem;
+}
+
+.sadhana-tagline--bsn {
+  color: #8D7249;
+  font-size: 2.8rem;
+}
+
+.sadhana-tagline--omc {
+  color: #00A2AC;
+  font-size: 2.8rem;
+}
+
+.sadhana-tagline--sm {
+  color: #276092;
+  font-size: 2.8rem;
+}
+
+.sadhana-tagline--aky {
+  color: #8d734a;
+  font-size: 2.8rem;
 }
 
 /* Toolset CSS
@@ -408,6 +444,10 @@ a[title*="Edit view"] { display: none; }
 
 /* Header CSS
 --------------------------------------------- */
+
+.site-header > .wrap {
+  padding: .4rem 0;
+}
 
 #logo {
   background: url(images/web-logo.png) top center no-repeat;
@@ -709,7 +749,6 @@ margin-top: 90px;
 
 .sadhana-practice-brand {
   max-width: 360px;
-  margin-bottom: 12px;
 }
 
 .sadhana-practice-brand img {
@@ -758,6 +797,146 @@ margin-top: 90px;
 @media (min-width: 861px) and (max-width: 1023px) {
   .container {
       width: 800px!important;
+  }
+}
+
+
+/* Event Pages
+--------------------------------------------- */
+
+.views-template-event-page .breadcrumb-navigation,
+.views-template-event-page .events-maker-ical,
+.views-template-event-page .comments-link,
+.views-template-event-page .event-category,
+.views-template-event-page #event-google-map,
+.views-template-event-page .event-location {
+  display: none;
+}
+
+.views-template-event-page .entry-thumbnail:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+.views-template-event-page .attachment-post-thumbnail {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.views-template-event-page .entry-header {
+  clear: none;
+}
+
+.views-template-event-page .entry-header .entry-meta {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.views-template-event-page .entry-header a {
+  color: #333;
+}
+
+.views-template-event-page .entry-header a:hover {
+  color: #333;
+  cursor: default;
+  text-decoration: none;
+}
+
+.views-template-event-page .entry-header .entry-date,
+.top-info > div {
+  position: relative;
+  font-family: 'Avenir Next W06 Regular';
+  line-height: 1.4;
+  width: 100%;
+}
+
+.views-template-event-page .entry-header .dtstart:before,
+.views-template-event-page .fa:before {
+  position: absolute;
+  top: 2px;
+  width: 20px;
+  text-align: center;
+  left: -30px;
+  color: #757575;
+  font: normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.views-template-event-page .entry-header .dtstart:before {
+  content: "\f073";
+}
+
+.single-event .entry-content {
+  clear: none;
+}
+
+.top-info {
+  font-size: 18px;
+  padding-left: 40px;
+}
+
+.top-info > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.top-info p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.top-info .info-secondary {
+  color: #757575;
+  font-size: 16px;
+}
+
+.middle-info {
+  clear: both;
+  padding-top: 1px;
+}
+
+.middle-info h2 {
+  font-size: 30px;
+  margin: 1.5em 0 1em;
+}
+
+.event-poster a {
+  display: inline-block;
+}
+
+.event-poster a:focus {
+  outline: none;
+}
+
+.event-poster img {
+  width: auto;
+  max-height: 780px;
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 901px) {
+  .views-template-event-page .attachment-post-thumbnail {
+    max-width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .views-template-event-page .entry-header .entry-meta,
+  .top-info {
+    margin-left: calc(50% + 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .views-template-event-page .entry-title,
+  .middle-info,
+  .views-template-event-page .social-share {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -829,14 +1008,14 @@ table img {
 @media (min-width: 1024px) and (max-width: 1200px) {
   .container-wide {
     width: 960px;
-    margin-left: calc(-340px / 2);
+    margin-left: calc(-180px / 2); /* (960 - 780)px / 2 */
   }
 }
 
 @media (min-width: 1201px) {
   .container-wide {
     width: 1150px;
-    margin-left: calc(-350px / 2);
+    margin-left: calc(-370px / 2); /* (1150 - 780)px / 2 */
   }
 }
 
@@ -845,6 +1024,10 @@ table img {
 --------------------------------------------- */
 
 @media only screen and (max-width: 1023px) {
+
+  .site-inner, .wrap {
+    max-width: 780px;
+  }
 
   .site-header .wrap {
     background-color: white;

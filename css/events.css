@@ -1,51 +1,47 @@
-#container {
-  padding-top: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.breadcrumb-navigation,
-.events-maker-ical,
-.comments-link,
-.event-category {
+.views-template-event-page .breadcrumb-navigation,
+.views-template-event-page .events-maker-ical,
+.views-template-event-page .comments-link,
+.views-template-event-page .event-category,
+.views-template-event-page #event-google-map,
+.views-template-event-page .event-location {
   display: none;
 }
 
-.entry-thumbnail:hover {
+.views-template-event-page .entry-thumbnail:hover {
   cursor: default;
   text-decoration: none;
 }
 
-.entry-title {
+.views-template-event-page .entry-title {
   margin-bottom: 1.111em;
 }
 
-.attachment-post-thumbnail {
+.views-template-event-page .attachment-post-thumbnail {
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-.entry-header {
+.views-template-event-page .entry-header {
   clear: none;
 }
 
-.entry-header .entry-meta {
+.views-template-event-page .entry-header .entry-meta {
   font-size: 18px;
   margin-bottom: 20px;
-  padding-left: 45px;
+  padding-left: 40px;
 }
 
-.entry-header a {
+.views-template-event-page .entry-header a {
   color: #333;
 }
 
-.entry-header a:hover {
+.views-template-event-page .entry-header a:hover {
   color: #333;
   cursor: default;
   text-decoration: none;
 }
 
-.entry-header .entry-date,
+.views-template-event-page .entry-header .entry-date,
 .top-info > div {
   position: relative;
   font-family: 'Avenir Next W06 Regular';
@@ -53,8 +49,8 @@
   width: 100%;
 }
 
-.entry-header .dtstart:before,
-.fa:before {
+.views-template-event-page .entry-header .dtstart:before,
+.views-template-event-page .fa:before {
   position: absolute;
   top: 2px;
   width: 20px;
@@ -68,7 +64,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.entry-header .dtstart:before {
+.views-template-event-page .entry-header .dtstart:before {
   content: "\f073";
 }
 
@@ -78,14 +74,14 @@
 
 .top-info {
   font-size: 18px;
-  padding-left: 45px;
+  padding-left: 40px;
 }
 
 .top-info > div:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.top-info  p {
+.top-info p {
   font-size: 18px;
   line-height: 1.4;
 }
@@ -97,29 +93,39 @@
 
 .middle-info {
   clear: both;
-  margin-top: 60px;
+  padding-top: 1px;
 }
 
-h2 {
+.middle-info h2 {
   font-size: 30px;
-  margin: 1.6em 0 1em;
+  margin: 1.5em 0 1em;
+}
+
+.event-poster img {
+  width: auto;
+  max-height: 780px;
+  border: 1px solid #ddd;
 }
 
 @media (min-width: 901px) {
-  .attachment-post-thumbnail {
+  .views-template-event-page .attachment-post-thumbnail {
     max-width: 50%;
     float: left;
     margin-bottom: 0;
   }
 
-  .entry-header .entry-meta,
+  .views-template-event-page .entry-header .entry-meta,
   .top-info {
     margin-left: calc(50% + 20px);
   }
 }
 
-@media only screen and (max-width: 500px) {
-  #container {
-    padding: 30px 0 0 0;
+@media (min-width: 1024px) {
+  .views-template-event-page .entry-title,
+  .middle-info,
+  .views-template-event-page .social-share {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
