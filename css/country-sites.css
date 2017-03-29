@@ -260,6 +260,7 @@ body > div { /* Hack because some text is out of <p> tag */
   line-height: 1.5;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+  font-family: 'Avenir Next W06 Regular';
 }
 
 .site-inner {
@@ -331,12 +332,12 @@ li {
 blockquote {
   border-width: 0 2px;
   border-style: solid;
-  border-color: #97694b;
+  border-color: #8d734a;
   text-align: center;
   padding: 0 3.2rem;
   font-size: 2rem;
   font-style: normal;
-  color: #152C51;
+  color: #1b3c6d;
   text-transform: uppercase;
   margin: 4rem 0;
 }
@@ -350,7 +351,7 @@ blockquote h5,
 blockquote p + p,
 h5 {
   font-family:'Avenir Next W06 Regular';
-  color: #97694b;
+  color: #8d734a;
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
@@ -379,25 +380,42 @@ p {
 }
 
 h1,
+h2,
+h3 {
+  color: #1b3c6d;
+  font-family:'Avenir Next W06 Demi';
+}
+
+h1,
 .entry-title {
-  margin-bottom: 1.111em;
-  font-weight: 400;
-  letter-spacing: -.03em;
   font-size: 3.2rem;
+  font-family:'Avenir Next W06 Bold';
+  letter-spacing: -.03em;
+}
+
+h1,
+h2 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 h2,
 h3 {
-  margin: 1.6em 0 1em;
+  margin-top: 1.8em;
 }
 
-h2, h3, h4 {
-font-family:'Avenir Next W06 Demi';
-color: #00A0BE;
+h3 {
+  font-family:'Avenir Next W06 Bold';
+  text-transform: none;
+}
+
+h3,
+h4 {
+  color: #8d734a;
 }
 
 .sadhana-tagline {
-  color: #836C49;
+  color: #8d734a;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.1;
@@ -526,6 +544,8 @@ color: #808084;
   color: #bca97d;
   padding: 12px 15px;
 	font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Avenir Next W06 Demi';
 }
 
 #ez-home-container-wrap  a.alignleft {
@@ -1199,7 +1219,7 @@ blockquote {
 
   .genesis-nav-menu a:hover,
   .genesis-nav-menu a:focus,
-  .current-menu-item > a {
+  .genesis-nav-menu .current-menu-item > a {
     color: rgba(0,0,0,0.8);
     text-decoration: none;
   }
