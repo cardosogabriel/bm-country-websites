@@ -685,23 +685,86 @@ margin-bottom: 15px;
 /* Calendar CSS
 --------------------------------------------- */
 
-body .fc {
-    font-size: 0.7em !important;
+.events-calendar .site-inner {
+  max-width: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.events-calendar .content {
+  max-width: 100%;
+}
+
+.events-calendar .entry-content {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .events-calendar .entry-title {
  margin-bottom: 40px;
 }
 
-.events-calendar .content {
-    max-width: 1100px !important;
+#events-full-calendar {
+  font-size: 1.4rem;
+  min-width: 738px; /* For mobile support */
 }
 
-.events-calendar button:hover {
-color: #333333;
-    background-color: #e6e6e6;
-    border-color: #bebebe;
+.fc-toolbar {
+  margin-bottom: .5rem;
 }
+
+.fc-toolbar button:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #bebebe;
+}
+
+.fc .fc-widget-header,
+.fc .fc-day-header {
+  border-left: none;
+  border-right: none;
+}
+
+.fc .fc-day-header {
+  text-align: right;
+  padding-right: 6px;
+}
+
+.fc-day-header,
+.fc-day-number {
+  font-size: 1.8rem;
+}
+
+.events-calendar .fc-basic-view .fc-body .fc-row {
+  height: auto!important;
+  min-height: 64px;
+  border-right: 1px solid #ddd;
+}
+
+.fc-row table {
+  margin-bottom: 5px;
+}
+
+.fc-ltr .fc-basic-view .fc-day-number {
+  line-height: 1;
+  padding: 4px;
+}
+
+#events-full-calendar .fc-event {
+  font-size: 1.3rem;
+  border-radius: 2px;
+}
+
+.events-calendar .fc-day-grid-event .fc-content {
+  white-space: normal;
+}
+
+.fc-day-grid-event .fc-time {
+  display: none;
+}
+
 
 /* Forms
 --------------------------------------------- */
