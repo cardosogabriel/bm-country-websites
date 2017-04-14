@@ -260,7 +260,6 @@ body > div { /* Hack because some text is out of <p> tag */
   line-height: 1.5;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-family: 'Avenir Next W06 Regular';
 }
 
 .site-inner {
@@ -271,9 +270,11 @@ a {
     color: #0d87e9;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: #095da0;
     text-decoration: underline;
+    outline: none;
 }
 
 button,
@@ -374,6 +375,24 @@ p .alignnone {
 
 /* Font CSS
 --------------------------------------------- */
+
+body {
+  font-family: 'Avenir Next W06 Regular';
+}
+
+p strong,
+p b,
+li strong,
+li b {
+  font-family: 'Avenir Next W06 Bold';
+}
+
+p em,
+p i,
+li em,
+li i {
+  font-family: 'Avenir Next W06 Italic';
+}
 
 p {
   font-size: 1.8rem;
@@ -747,6 +766,9 @@ body .gform_wrapper .top_label div.ginput_container {
 /* Slider CSS
 --------------------------------------------- */
 
+.soliloquy-caption strong {
+  font-family: "Avenir Next W06 Regular";
+}
 
 .soliloquy-container .soliloquy-caption.soliloquy-caption-left {
     width: 30%;
@@ -1007,9 +1029,8 @@ select {
 }
 
 table img {
-  width: 72px;
-  height: 72px;
-  max-width: none;
+  max-width: 72px;
+  max-height: 72px;
 }
 
 @media (min-width: 861px) {
