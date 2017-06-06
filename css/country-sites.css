@@ -266,8 +266,16 @@ body > div { /* Hack because some text is out of <p> tag */
   padding-top: 6rem;
 }
 
-a {
-    color: #0d87e9;
+.site-inner #container {
+  background: inherit;
+  padding: 0;
+  max-width: inherit;
+  margin: inherit;
+}
+
+a,
+.site-inner a {
+  color: #0d87e9;
 }
 
 a:hover,
@@ -289,6 +297,7 @@ input[type="submit"],
   text-transform: uppercase;
   border: 1px solid transparent;
   border-color: #0b79d1;
+  color: white!important;
 }
 
 button:hover,
@@ -938,7 +947,7 @@ margin-top: 90px;
   padding-left: 40px;
 }
 
-.views-template-event-page .entry-header a {
+.views-template-event-page .entry-header .entry-meta a {
   color: #333;
 }
 
