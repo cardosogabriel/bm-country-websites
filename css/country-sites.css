@@ -960,12 +960,17 @@ margin-top: 90px;
 .views-template-event-page .entry-header .entry-date,
 .top-info > div {
   position: relative;
+  display: block;
   font-family: 'Avenir Next W06 Regular';
   line-height: 1.4;
   width: 100%;
 }
 
-.views-template-event-page .entry-header .dtstart:before,
+.views-template-event-page .entry-header .entry-date:not(:first-child) .dtstart:before {
+  display: none;
+}
+
+.views-template-event-page .entry-header .entry-date:first-child .dtstart:before,
 .views-template-event-page .fa:before {
   position: absolute;
   top: 2px;
