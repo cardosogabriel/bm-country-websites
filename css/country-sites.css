@@ -1152,7 +1152,7 @@ table img {
   }
 
   .js .menu-toggle {
-    color: rgba(0,0,0,0.54);
+    color: rgba(0,0,0,0.54)!important;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding: 0;
