@@ -296,6 +296,7 @@ input[type="submit"],
   font-weight: 600;
   text-transform: uppercase;
   border: 1px solid transparent;
+  background-color: #0d87e9;
   border-color: #0b79d1;
   color: white!important;
 }
@@ -722,6 +723,10 @@ margin-bottom: 15px;
 
 .fc-toolbar {
   margin-bottom: .5rem;
+}
+
+.fc-toolbar button {
+  color: inherit!important;
 }
 
 .fc-toolbar button:hover {
