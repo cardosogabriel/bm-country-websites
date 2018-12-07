@@ -1,3 +1,5 @@
+/* Styles in Genesys > Extender Custom */
+
 /*------------------------------------
 // #BOOTSTRAP 4 STYLES
 //----------------------------------*/
@@ -1357,5 +1359,62 @@ blockquote {
   .genesis-nav-menu .sub-menu .current-menu-item a:focus {
     background-color: #0099DB;
     color: white;
+  }
+}
+
+/* Under Footer
+--------------------------------------------- */
+
+.under-footer {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,.1);
+  float: left;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-bottom: -25px;
+}
+
+.under-footer p {
+  font-size: 1.2rem;
+}
+
+
+/* Cookies Notice
+--------------------------------------------- */
+
+#cookie-notice {
+  font-size: 14px;
+}
+
+.cookie-notice-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 15px;
+}
+
+#cn-notice-text {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+
+#cookie-notice .button {
+  margin-left: 0;
+  margin-right: 8px;
+  border-color: #fff;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+#cookie-notice .button:hover,
+#cookie-notice .button:focus {
+  color: #0083c1!important;
+  background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+  #cn-notice-text {
+    display: block;
   }
 }
