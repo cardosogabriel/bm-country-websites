@@ -978,6 +978,7 @@ margin-top: 90px;
   font-family: 'Avenir Next W06 Regular';
   line-height: 1.4;
   width: 100%;
+  visibility: visible;
 }
 
 .views-template-event-page .entry-header .entry-date:not(:first-child) .dtstart:before {
