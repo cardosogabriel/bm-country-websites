@@ -1,0 +1,38 @@
+$visibility: none;
+$blue: #0d87e9;
+$grey: #868e96;
+
+$elements-to-hide: (
+    '.dwqa-sort-by', 
+    '.dwqa-question-stats', 
+    '.dwqa-votes-count', 
+    '.dwqa-question-vote', 
+    '.dwqa-answer-vote', 
+    '.dwqa-pick-best-answer',
+    
+    '.breadcrumb',
+    '.taxonomy-description',
+    
+    '.wp-editor-tabs',
+    '#mceu_12',
+    '#mceu_23',
+    
+    'label[for=#{"question-category"}]',
+    '#question-category',
+    'label[for=#{"question-tag"}]',
+    'input[name="question-tag"]'
+);
+
+$remove-link: (
+    '.dwqa-question-meta',
+    '.dwqa-comment-meta',
+    '.dwqa-answer-meta'
+);
+
+$add-link: (
+    '.dwqa-question-actions',
+    '.dwqa-comment-actions',
+    '.dwqa-question-tag',
+    '.dwqa-question-category',
+    '.dwqa-answer-actions'
+);

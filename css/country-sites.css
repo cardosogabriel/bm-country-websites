@@ -1426,3 +1426,111 @@ blockquote {
     display: block;
   }
 }
+
+/* Forum
+--------------------------------------------- */
+.dwqa-sort-by {
+  display: none;
+}
+.dwqa-question-stats {
+  display: none;
+}
+.dwqa-votes-count {
+  display: none;
+}
+.dwqa-question-vote {
+  display: none;
+}
+.dwqa-answer-vote {
+  display: none;
+}
+.dwqa-pick-best-answer {
+  display: none;
+}
+.breadcrumb {
+  display: none;
+}
+.taxonomy-description {
+  display: none;
+}
+.wp-editor-tabs {
+  display: none;
+}
+#mceu_12 {
+  display: none;
+}
+#mceu_23 {
+  display: none;
+}
+label[for=question-category] {
+  display: none;
+}
+#question-category {
+  display: none;
+}
+label[for=question-tag] {
+  display: none;
+}
+input[name="question-tag"] {
+  display: none;
+}
+.dwqa-question-meta a {
+  pointer-events: none;
+}
+.dwqa-comment-meta a {
+  pointer-events: none;
+}
+.dwqa-answer-meta a {
+  pointer-events: none;
+}
+.dwqa-question-actions a {
+  pointer-events: initial;
+}
+.dwqa-comment-actions a {
+  pointer-events: initial;
+}
+.dwqa-question-tag a {
+  pointer-events: initial;
+}
+.dwqa-question-category a {
+  pointer-events: initial;
+}
+.dwqa-answer-actions a {
+  pointer-events: initial;
+}
+.dwqa-question-meta {
+  color: #868e96;
+}
+.dwqa-question-meta span a {
+  color: #868e96;
+}
+.dwqa-comment-meta {
+  color: #868e96;
+}
+.dwqa-comment-meta a {
+  color: #868e96 !important;
+}
+.dwqa-question-category {
+  color: #0d87e9;
+}
+.dwqa-question-category a {
+  color: #0d87e9 !important;
+}
+.dwqa-question-actions span {
+  color: black;
+}
+.dwqa-question-meta img {
+  display: none !important;
+}
+.dwqa-comment-meta img {
+  display: none !important;
+}
+.dwqa-current {
+  font-weight: bold;
+}
+.entry-meta {
+  visibility: hidden;
+}
+.entry-meta .entry-time {
+  visibility: visible;
+}

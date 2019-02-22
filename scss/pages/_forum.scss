@@ -1,0 +1,75 @@
+@each $item in $elements-to-hide {
+    #{$item} {
+        display: $visibility;
+    }
+}
+
+@each $item in $remove-link {
+    #{$item} {
+        a {
+            pointer-events: none;
+        }
+    }
+}
+
+@each $item in $add-link {
+    #{$item} {
+        a {
+            pointer-events: initial;
+        }
+    }
+}
+
+.dwqa-question-meta {
+    color: $grey;
+    span {
+        a {
+            color: $grey;
+        }
+    }
+}
+
+.dwqa-comment-meta {
+    color: $grey;
+    a {
+        color: $grey !important;
+    }
+}
+
+.dwqa-question-category {
+    color: $blue;
+    a {
+        color: $blue !important;
+    }
+}
+
+.dwqa-question-actions {
+    span {
+        color: black;
+    }
+}
+
+// removing profile images - question and comment
+.dwqa-question-meta {
+    img {
+        display: $visibility !important;
+    }
+}
+
+.dwqa-comment-meta {
+    img {
+        display: $visibility !important;
+    }
+}
+
+.dwqa-current {
+    font-weight: bold;
+}
+
+// removing by bhakti marga
+.entry-meta {
+    visibility: hidden;
+    .entry-time {
+        visibility: visible;
+    }
+}
